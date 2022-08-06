@@ -57,7 +57,13 @@
 }
 
 .inicio {
-   background-color :rgb(90, 85, 85);
+
+  min-height: 100vh;
+  background-image:linear-gradient(rgba(89, 90, 95, 0.80), rgba(83, 86, 95, 0.80)), url(../assets/imagenes/img-22.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -88,6 +94,7 @@
   
   .logo img {
 width: 80px;
+margin-left: 10px;
 
   }
 
