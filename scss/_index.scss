@@ -1,0 +1,41 @@
+.inicio {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(89, 90, 95, 0.8),
+      rgba(83, 86, 95, 0.8)
+    ),
+    url(../assets/imagenes/img-22.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h1 {
+    color: #f55e07;
+    font-size: 5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1320px;
+}

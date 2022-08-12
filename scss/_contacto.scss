@@ -1,0 +1,56 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(89, 90, 95, 0.75),
+      rgba(83, 86, 95, 0.75)
+    ),
+    url(../assets/imagenes/img2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .contac-form {
+    max-width: 1170px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background-image: linear-gradient(
+      rgba(51, 47, 43, 0.5),
+      rgba(51, 45, 40, 0.5)
+    );
+  }
+
+  .contac-form form button,
+  .contac-form form input,
+  .contac-form form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(255, 123, 0);
+    outline: none;
+    color: #ffffff;
+  }
+
+  .button {
+    background: rgba(255, 123, 0);
+    border: 0;
+    padding: 1em;
+  }
+
+  .contac-form form button:hover,
+  .contac-form form button:focus {
+    background: rgb(250, 173, 28);
+    transition-duration: 1s;
+    outline: 0;
+  }
+}
