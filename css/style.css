@@ -86,16 +86,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  width: 100%;
 }
 header .nav {
-  width: 100%;
   visibility: hidden;
   height: 0;
   position: absolute;
   font-size: 1rem;
-  right: 0;
 }
-header .nav .nav__list {
+header .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -103,13 +102,13 @@ header .nav .nav__list {
   flex-direction: column;
   text-align: center;
 }
-header .nav .nav__list--primary {
+header .nav__list--primary {
   margin-bottom: 2rem;
 }
-header .nav .nav__item {
+header .nav__item {
   margin-top: 0.75rem;
 }
-header .nav .nav__link {
+header .nav__link {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -134,7 +133,11 @@ header .nav-toggle {
   right: 0;
   margin-right: 40px;
 }
-header.hamburger:hover {
+header .hamburger {
+  width: 50%;
+  position: relative;
+}
+header .hamburger.hamburger:hover {
   opacity: 0.75;
   display: block;
   margin: 0 auto;
@@ -145,9 +148,10 @@ header.hamburger:hover {
   transform: translateY(3px);
   opacity: 0.65;
 }
-header .hamburger {
-  width: 50%;
-  position: relative;
+header .hamburgerbutton:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 190%;
 }
 header .logo {
   margin-right: 1rem;
@@ -169,7 +173,6 @@ header .button {
 }
 header .button span {
   position: absolute;
-  background-color: #55ae36;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -181,23 +184,6 @@ header .i {
   color: white;
   font-size: 1rem;
   line-height: 2.5rem;
-}
-header button:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 190%;
-}
-header .button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  width: 100%;
-  background: linear-gradient(to right, #55ae36, #88e169);
-  z-index: -1;
-  border-radius: 0 0 50% 50%;
-  transition: all 0.5s;
 }
 header .li {
   list-style-type: none;
@@ -214,11 +200,7 @@ header .link {
 
 .inicio {
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(89, 90, 95, 0.8),
-      rgba(83, 86, 95, 0.8)
-    ),
-    url(../assets/imagenes/img-22.jpg);
+  background-image: linear-gradient(rgba(89, 90, 95, 0.8), rgba(83, 86, 95, 0.8)), url(../assets/imagenes/img-22.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -254,11 +236,7 @@ svg {
 
 .productos {
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(89, 90, 95, 0.8),
-      rgba(83, 86, 95, 0.8)
-    ),
-    url(../assets/imagenes/img1.jpg);
+  background-image: linear-gradient(rgba(89, 90, 95, 0.8), rgba(83, 86, 95, 0.8)), url(../assets/imagenes/img1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -300,11 +278,7 @@ svg {
 
 .servicios {
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(89, 90, 95, 0.75),
-      rgba(83, 86, 95, 0.75)
-    ),
-    url(../assets/imagenes/img-revuelo-1.jpg);
+  background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img-revuelo-1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -313,15 +287,24 @@ svg {
 
 .ubicacion {
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(89, 90, 95, 0.75),
-      rgba(83, 86, 95, 0.75)
-    ),
-    url(../assets/imagenes/img-revuelo-4.jpg);
+  background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img-revuelo-4.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+.ubicacion .map-responsive {
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
+  height: 0%;
+}
+.ubicacion .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .flex-container {
@@ -333,11 +316,7 @@ svg {
 
 .form {
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(89, 90, 95, 0.75),
-      rgba(83, 86, 95, 0.75)
-    ),
-    url(../assets/imagenes/img2.jpg);
+  background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -349,10 +328,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
-  background-image: linear-gradient(
-    rgba(51, 47, 43, 0.5),
-    rgba(51, 45, 40, 0.5)
-  );
+  background-image: linear-gradient(rgba(51, 47, 43, 0.5), rgba(51, 45, 40, 0.5));
 }
 .form .contac-form form button,
 .form .contac-form form input,
