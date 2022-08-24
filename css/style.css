@@ -12,19 +12,6 @@ body {
 body img {
   max-width: 100%;
 }
-body img,
-body svg {
-  vertical-align: middle;
-}
-body .logo img {
-  width: 80px;
-  margin-left: 10px;
-}
-body .container {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1320px;
-}
 @media (min-width: 768px) {
   body .form {
     padding: 0 4rem;
@@ -88,114 +75,18 @@ header {
   z-index: 2;
   width: 100%;
 }
-header .nav {
+header .logo {
+  margin-right: 1rem;
+}
+header .logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+header .logo .nav {
   visibility: hidden;
   height: 0;
   position: absolute;
   font-size: 1rem;
-}
-header .nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-header .nav__list--primary {
-  margin-bottom: 2rem;
-}
-header .nav__item {
-  margin-top: 0.75rem;
-}
-header .nav__link {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-header .nav--visible {
-  visibility: visible;
-  height: auto;
-  position: relative;
-}
-header .nav-toggle {
-  cursor: pointer;
-  border: none;
-  font-size: 30px;
-  width: 3rem;
-  height: 3rem;
-  padding: 0em;
-  border-radius: 0.25rem;
-  background: none;
-  color: white;
-  transition: opacity 250ms ease;
-  position: absolute;
-  right: 0;
-  margin-right: 40px;
-}
-header .hamburger {
-  width: 50%;
-  position: relative;
-}
-header .hamburger.hamburger:hover {
-  opacity: 0.75;
-  display: block;
-  margin: 0 auto;
-  height: 3px;
-  background: white;
-  width: 100%;
-  transform: translateY(-6px);
-  transform: translateY(3px);
-  opacity: 0.65;
-}
-header .hamburgerbutton:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 190%;
-}
-header .logo {
-  margin-right: 1rem;
-}
-header .button {
-  display: none;
-  position: relative;
-  background: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.93rem 3.3rem 0.93rem 1.2rem;
-  font-weight: 700;
-  border: 0.1rem solid white;
-  border-radius: 50rem;
-  cursor: pointer;
-  z-index: 1;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-header .button span {
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-}
-header .i {
-  color: white;
-  font-size: 1rem;
-  line-height: 2.5rem;
-}
-header .li {
-  list-style-type: none;
-  font-size: 2rems;
-  display: inline;
-  padding: 10px;
-  margin: 5px;
-}
-header .link {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
 .inicio {
@@ -207,31 +98,11 @@ header .link {
   background-size: cover;
 }
 .inicio h1 {
-  color: #f55e07;
+  color: #f55302;
   font-size: 5rem;
 }
 .inicio a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
-.logo img {
-  width: 80px;
-  margin-left: 10px;
-}
-
-.container {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1320px;
 }
 
 .productos {
@@ -241,39 +112,6 @@ svg {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-}
-.productosbutton:hover:focus {
-  background: rgb(250, 173, 28);
-  transition-duration: 1s;
-  outline: 0;
-}
-.productos .grid__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  margin: 20px 0px;
-}
-.productos .item {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(252, 173, 28);
-  border-radius: 1rem;
-  padding: 2rem;
-  margin-bottom: 30px;
-}
-.productos .item img {
-  order: -1;
-  align-self: center;
-}
-.productos .item button {
-  margin-top: auto;
-  background: black;
-  color: white;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
 }
 
 .servicios {
@@ -337,12 +175,12 @@ svg {
   padding: 0.7em;
   border: none;
   background: none;
-  border-bottom: 1px solid rgb(255, 123, 0);
+  border-bottom: 1px solid #f55302;
   outline: none;
   color: #ffffff;
 }
 .form .button {
-  background: rgb(255, 123, 0);
+  background: #f55302;
   border: 0;
   padding: 1em;
 }
