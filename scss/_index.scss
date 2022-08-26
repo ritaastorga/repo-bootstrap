@@ -1,4 +1,5 @@
 .inicio {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.8),
@@ -13,6 +14,16 @@
   h1 {
     color: $color-primario;
     font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: black;
+  }
+
+  .texto-index {
+    font-size: 1.5rem;
+    color: white;
   }
 
   a {

@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Rock Salt", cursive;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -86,10 +87,12 @@ header .logo .nav {
   visibility: hidden;
   height: 0;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  right: 0;
 }
 
 .inicio {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(89, 90, 95, 0.8), rgba(83, 86, 95, 0.8)), url(../assets/imagenes/img-22.jpg);
   background-repeat: no-repeat;
@@ -101,11 +104,20 @@ header .logo .nav {
   color: #f55302;
   font-size: 5rem;
 }
+.inicio h2 {
+  font-size: 2rem;
+  color: black;
+}
+.inicio .texto-index {
+  font-size: 1.5rem;
+  color: white;
+}
 .inicio a {
   text-decoration: none;
 }
 
 .productos {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(89, 90, 95, 0.8), rgba(83, 86, 95, 0.8)), url(../assets/imagenes/img1.jpg);
   background-repeat: no-repeat;
@@ -114,7 +126,8 @@ header .logo .nav {
   background-size: cover;
 }
 
-.servicios {
+.fabrica {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img-revuelo-1.jpg);
   background-repeat: no-repeat;
@@ -124,6 +137,7 @@ header .logo .nav {
 }
 
 .ubicacion {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img-revuelo-4.jpg);
   background-repeat: no-repeat;
@@ -153,6 +167,7 @@ header .logo .nav {
 }
 
 .form {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(89, 90, 95, 0.75), rgba(83, 86, 95, 0.75)), url(../assets/imagenes/img2.jpg);
   background-repeat: no-repeat;

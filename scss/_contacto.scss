@@ -6,6 +6,7 @@
 }
 
 .form {
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.75),
@@ -16,7 +17,6 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-
   .contac-form {
     max-width: 1170px;
     margin-top: 30px;
