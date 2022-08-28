@@ -1,15 +1,15 @@
 .ubicacion {
-  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.75),
       rgba(83, 86, 95, 0.75)
     ),
-    url(../assets/imagenes/img-revuelo-4.jpg);
+    url(../assets/imagenes/img4.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
 
   .map-responsive {
     overflow: hidden;

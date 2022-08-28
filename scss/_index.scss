@@ -1,19 +1,25 @@
 .inicio {
-  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.8),
       rgba(83, 86, 95, 0.8)
     ),
-    url(../assets/imagenes/img-22.jpg);
+    url(../assets/imagenes/img-22.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
 
-  h1 {
-    color: $color-primario;
-    font-size: 5rem;
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    h1 {
+      color: $color-primario;
+      font-size: 3.5rem;
+    }
   }
 
   h2 {
@@ -28,5 +34,9 @@
 
   a {
     text-decoration: none;
+  }
+
+  img {
+    width: 100%;
   }
 }

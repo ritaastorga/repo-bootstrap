@@ -1,13 +1,24 @@
 .fabrica {
-  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.75),
       rgba(83, 86, 95, 0.75)
     ),
-    url(../assets/imagenes/img-revuelo-1.jpg);
+    url(../assets/imagenes/img-11.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+
+  .card {
+    border-color: $color-primario;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

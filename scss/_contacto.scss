@@ -6,19 +6,20 @@
 }
 
 .form {
-  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
       rgba(89, 90, 95, 0.75),
       rgba(83, 86, 95, 0.75)
     ),
-    url(../assets/imagenes/img2.jpg);
+    url(../assets/imagenes/img2.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+
   .contac-form {
-    max-width: 1170px;
+    max-width: 1320px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
